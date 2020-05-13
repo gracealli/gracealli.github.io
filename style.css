@@ -1,0 +1,308 @@
+/* BACKGROUND */
+html {
+    background-color: #f7f7f4;
+}
+
+/* HEADINGS */
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #2d2d2d;
+}
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #2d2d2d;
+}
+.PageTitle {
+    font-size: 200px;
+    width: 63%;
+    margin: 10px 0px 0px 180px;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 5px 5px;
+    color: #2d2d2d;
+    position: relative;
+    z-index: 1;
+}
+.PageTitle.project {
+    font-size: 175px;
+}
+
+/* BODY TEXT */
+.BodyText {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #2d2d2d;
+}
+.HeadDescription{
+    font-size: 35px;
+    width: 45%;
+    margin: 10px 0px 0px 180px;
+    overflow: hidden;
+    padding: 15px 15px;
+    white-space: nowrap;
+}
+
+/* LINKS */
+a:link {
+    text-decoration: none;
+    color: #2d2d2d;
+}
+a:visited {
+    color: #2d2d2d;
+}
+.NavHead a:hover {
+    color: #979fad;
+    transition-duration: .20s;   
+}
+
+#ProjectTitleContainer a:hover {
+    color: #f7f7f4;
+    -webkit-text-stroke: 3px;
+    -webkit-text-stroke-color: #2d2d2d;
+    transition-duration: .20s;
+}
+
+/* NAVIGATION */
+#NavContainer {
+    display: relative;   
+    white-space: nowrap;
+}
+.NavHead{
+    margin: 200px 0px 0px 675px;
+    word-spacing: 150px; 
+    width: 41.5%;
+    text-align: right;
+    overflow: hidden;
+}
+#NavAbout, #NavContact {
+    display: inline;
+    font-size: 45px;
+}
+#LogoContainer {
+    margin: -70px 0px 0px 185px;
+    max-width: 100%;
+ }
+.NavLogo {
+     width: 7.5em;
+     align-items: center;
+     position: absolute;
+ }
+
+/* RULERS */
+hr {
+    border: 2px solid #2d2d2d;
+}
+hr.ruler {
+    margin-top: 127.5px;
+    margin-left: 185px;
+    width: 63.5%;
+}
+hr.ruler.divide {
+    margin-top: 100px;
+}
+hr.ruler.bottom {
+    margin-top: 0px;
+}
+.final {
+    margin-bottom: 250px;
+}
+
+/* HOME PAGE */
+#NameHead {
+    font-size: 200px;
+    width: 63%;
+    margin: 10px 0px 0px 180px;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 5px 5px;
+}
+.AboutMe {
+    font-size: 45px;
+    width: 45%;
+    margin: 10px 0px 0px 180px;
+    overflow: hidden;
+    padding: 15px 15px;
+    white-space: nowrap;
+}
+
+
+/* PROJECTS HOME PAGE */
+.ProjectTitle {
+    font-size: 85px;
+    font-weight: 700;
+    width: 62%;
+    margin: 40px 0px 40px 180px;
+    overflow: hidden;
+    padding: 15px 15px;
+    white-space: nowrap;
+}
+.glyph:after {
+    content: "\00bb";
+}
+
+/* GIF */
+.giphy-embed {
+    float: right;
+    z-index: -1;
+    position: absolute;
+    margin: -670px 0px 0px 850px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* BOOK IMAGES */
+.BookLayoutOne {
+    margin: 40px 0px 40px 185px;
+    overflow: hidden;
+}
+
+/* BRAND IMAGES */
+.BrandLayoutOne {
+    margin: 40px 0px 40px 185px;
+    overflow: hidden;
+}
+
+
+/* SMALLER PAGE MEDIA QUERY; NEW FONT SIZES OVER 1.67*/
+@media screen and (max-width: 1625px) {
+    .PageTitle, #NameHead { 
+        font-size: 120px;
+    }
+    .HeadDescription, .AboutMe {
+        font-size: 21px;
+    }
+    .giphy-embed {
+        transform: translate(-345px, 150px);
+    }
+    #NavAbout, #NavContact {
+        font-size: 27px;
+    }
+    .NavHead {
+        margin: 200px 0px 0px 475px;
+        word-spacing: 90px;
+    }
+    .NavLogo {
+        width: 4.5em;
+    }
+    #LogoContainer {
+        margin-top: -42px;
+    }
+    hr.ruler {
+        margin-top: 76px;
+        width: 63.5%;
+    }
+    .ProjectTitle {
+        font-size: 50.9px;
+    }
+    .PageTitle.project {
+        font-size: 105px;
+    }
+    .BookLayoutOne, .BrandLayoutOne {
+        width: 50%;
+        margin-left: 185px; 
+    }
+    hr {
+        border: 1.2px solid #2d2d2d;
+    }
+    hr.ruler.divide {
+        margin-top: 60px;
+    }
+    #ProjectTitleContainer a:hover {
+        color: #f7f7f4;
+        -webkit-text-stroke: 1.8px;
+        -webkit-text-stroke-color: #2d2d2d;
+        transition-duration: .20s;
+    }
+}
+/* SMALLER MEDIA QUERY; NEW SIZES MOSTLY OVER 1.67 FROM SMALLER (ABOVE)*/
+@media screen and (max-width: 965px) {
+    .PageTitle, #NameHead { 
+        font-size: 72px;
+        margin-left: 100px;
+    }
+    .HeadDescription, .AboutMe {
+        font-size: 18px;
+        width: 60%;
+        white-space: pre-wrap;
+        margin-left: 95px;
+    }
+    #NavAbout, #NavContact {
+        font-size: 16.16px;
+    }
+    .giphy-embed {
+        display: none;
+    }
+    br{
+        display: none;
+    }
+    hr.ruler {
+        margin-top: 100px;
+        margin-left: 100px;
+    }
+    #LogoContainer {
+        margin-left: 105px;
+        margin-top: -25px;
+    }
+    .NavHead {
+        margin: 120px 0px 0px 270px;
+        word-spacing: 54px;
+    }
+    .ProjectTitle {
+        font-size: 30.5px;
+        margin-left: 95px;
+    }
+    .NavLogo {
+        width: 2.7em;
+    }
+    
+    #LogoContainer {
+        margin-top: -28px;
+    }
+    hr {
+        border: 0.72px solid #2d2d2d;
+    }
+    hr.ruler {
+        margin-top: 45.5px;
+        width: 67%; 
+    }
+    hr.ruler.divide {
+        margin-top: 36px;
+    }
+    .final {
+        margin-bottom: 90px;
+    }
+    .PageTitle.project {
+        font-size: 63px;
+        white-space: pre-wrap;
+    }
+    .BookLayoutOne, .BrandLayoutOne {
+        width: 50%;
+        margin-left: 100px;
+    }
+    #ProjectTitleContainer a:hover {
+        color: #f7f7f4;
+        -webkit-text-stroke: 1.10px;
+        -webkit-text-stroke-color: #2d2d2d;
+        transition-duration: .20s;
+    }
+    html {
+        margin-left: -25px;
+        margin-top: -25px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    html {
+    margin-left: -60px;
+    margin-top: -30px;
+    }
+    .PageTitle, .ProjectTitle, .PageTitle.project, #NameHead {
+        white-space: pre-wrap;
+    }
+    .NavHead {
+        margin: 120px 0px 0px 225px;
+        word-spacing: 54px;
+    }
+}
